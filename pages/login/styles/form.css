@@ -6,6 +6,10 @@ h2{
     color: var(--grey-1);
 }
 
+.lpFormHeader {
+    width: 100%;
+    text-align: left;
+}
 
 form {
     display: flex;
@@ -15,18 +19,86 @@ label {
     display: block;
     margin-top: 26px;
     margin-bottom: 12px;
+
+    font-size: var(--font-s-4);
+    color: var(--grey-1);
 }
+
+form input {
+    width: 20.063em;
+    height: 2.75em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 0 16px;
+}
+form input:focus{
+    border: 0.5px solid black;
+}
+
+form input::placeholder{
+    color: var(--grey-4);
+}
+
+form button {
+    width: 20.063em;
+    height: 2.375em;
+
+    border: 0px;
+    border-radius: 4px;
+
+    background-color: var(--brand-1);
+    color: var(--grey-9);
+
+    cursor: pointer;
+}
+
+.lpFormFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lpFormFooter h3{
+    font-size: var(--font-s-5);
+    color: var(--grey-1);
+
+    margin-bottom: 20px;
+}
+.lpFormFooter p {
+    font-size: var(--font-s-5);
+    color: var(--grey-3);
+
+    margin-bottom: 20px;
+}
+.lpRegisterBttn {
+    width: 20.063em;
+    height: 2.375em;
+
+    border: 0px;
+    border-radius: 4px;
+
+    background-color: var(--grey-9);
+    color: var(--grey-1);
+
+    font-weight: var(--font-w-1);
+
+    cursor: pointer;
+
+}
+
+
 
 .alert-border{
     border: 1px solid var(--alert-1);
 }
 
-.passwordError {
+.wrongPass {
     color: var(--alert-1);
     margin-top: 12px;
     margin-bottom: 26px;
+    height: 20px;
 }
 
 .hide{
-    color: var(--grey-9);
+    display: none;
 }
