@@ -1,0 +1,71 @@
+
+.rpContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rpFormContainer{
+    width: 23.125em;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: var(--grey-1);
+}
+
+.rpFormHeader{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 20.063rem;
+
+    margin-bottom: 27px;
+}
+
+label{
+    display: block;
+    margin-bottom: 12px;
+}
+
+input{
+    display: block;
+
+    width: 20.063rem;
+    margin-bottom: 26px;
+    height: 44px;
+    padding: 0 16px;
+
+    border: 1px solid var(--grey-6);
+    border-radius: 4px;
+}
+
+.registerBttn{
+    height: 38px;
+    width: 20.063rem;
+    margin-bottom: 30px;
+
+    background-color: var(--brand-1);
+    color: var(--grey-9);
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.backToLpBttn{
+    height: 38px;
+    width: 20.063rem;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.repDescContainer{
+    width: 20em;
+}
