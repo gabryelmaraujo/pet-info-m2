@@ -1,0 +1,32 @@
+
+h2{
+    font-size: var(--font-s-2);
+    font-weight: var(--font-w-2);
+
+    color: var(--grey-1);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    display: block;
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+
+.alert-border{
+    border: 1px solid var(--alert-1);
+}
+
+.passwordError {
+    color: var(--alert-1);
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.hide{
+    color: var(--grey-9);
+}

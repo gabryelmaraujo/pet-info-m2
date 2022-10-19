@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/pages/login/styles/loginpage.css">
+    <link rel="stylesheet" href="/pages/login/styles/texts.css">
+    <link rel="stylesheet" href="/pages/login/styles/form.css">
+
     <title>Petinfo - Login</title>
 </head>
 <body>
-    <main>
-        <section class="lpBlogDescription">
+    <main class="lpContainer">
+        <section class="lpBlogDescriptionSec">
             <div class="lpDescHeader">
                 <h1>Petinfo</h1>
-                <h3>Amor e carinho por meio do conhecimento</h3>
+                <h3><span class="spanAmor">Amor</span> e <span class="spanCarinho">carinho</span> por meio do conhecimento</h3>
                 <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
             </div>
-            <div class="lpImages">
-                <img src="" class="img1">
-                <img src="" class="img2">
-                <img src="" class="img3">
-                <img src="" class="img4">
+            <div class="lpImage">
+                <img src="/pages/login/src/img/imgloginpage.png" alt="">
             </div>
 
         </section>
-        <section class="lpLoginForm">
+        <section class="lpLoginFormSec">
             <div class="lpFormHeader">
                 <h2>Login</h2>
             </div>
@@ -32,6 +39,8 @@
 
                 <label for="lpPassInput">Senha</label>
                 <input type="password" name="lpPassInput" id="lpPassInput">
+
+                <p class="passwordError hide"> A senha está incorreta!</p>
 
                 <button class="lpLoginBttn">Acessar</button>
             </form>

@@ -1,0 +1,20 @@
+
+
+.lpContainer {
+    display: flex;
+    margin: 0 auto;
+    width: 50em;
+
+    padding: 5% 0;
+}
+
+.lpBlogDescriptionSec{
+    width: 24.438em;
+    margin-right: 40px;
+}
+
+.lpLoginFormSec{
+    width: 23em;
+
+    padding: 44px 24px;
+}

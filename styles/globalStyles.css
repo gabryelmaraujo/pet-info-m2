@@ -5,22 +5,36 @@
 }
 
 :root {
-  --brand100: "hsl(230, 57%, 50%)";
-  --brand200: "hsl(230, 68%, 54%)";
-  --gray100: "hsl(210, 11%, 15%)";
-  --gray200: "hsl(210, 10%, 23%)";
-  --gray300: "hsl(210, 9%, 31%)";
-  --gray400: "hsl(210, 7%, 56%)";
-  --gray500: "hsl(210, 11%, 71%)";
-  --gray600: "hsl(210, 16%, 93%)";
-  --gray700: "hsl(210, 17%, 95%)";
-  --gray800: "hsl(210, 17%, 98%)";
-  --gray900: "hsl(200, 100%, 99%)";
-  --alert100: "hsl(349, 57%, 50%)";
-  --alert200: "hsl(349, 69%, 55%)";
-  --sucess100: "hsl(162, 88%, 26%)";
+  --brand-1: hsl(230, 57%, 50%);
+  --brand-2: hsl(230, 68%, 54%);
+  --grey-1: hsl(210, 11%, 15%);
+  --grey-2: hsl(210, 10%, 23%);
+  --grey-3: hsl(210, 9%, 31%);
+  --grey-4: hsl(210, 7%, 56%);
+  --grey-5: hsl(210, 11%, 71%);
+  --grey-6: hsl(210, 16%, 93%);
+  --grey-7: hsl(210, 17%, 95%);
+  --grey-8: hsl(210, 17%, 98%);
+  --grey-9: hsl(200, 100%, 99%);
+  --alert-1: hsl(349, 57%, 50%);
+  --alert-2: hsl(349, 69%, 55%);
+  --sucess-1: hsl(162, 88%, 26%);
+
+  --font-s-1: 32px;
+  --font-s-2: 20px;
+  --font-s-3: 18px;
+  --font-s-4: 16px;
+  --font-s-5: 14px;
+
+  --font-w-1: 600;
+  --font-w-2: 500;
+  --font-w-3: 400;
+
+  --line-h-1: 48px;
+  --line-h-2: 24px;
+  --line-h-3: 21px;
 }
 
 body {
-  font-family: "Inter, sans-serif";
+  font-family: 'IBM Plex Sans', sans-serif;
 }
