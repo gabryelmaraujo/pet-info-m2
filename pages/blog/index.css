@@ -1,0 +1,18 @@
+
+.blogContainer{
+    width: 50em;
+    margin: 0.625em auto;
+}
+
+.blogHeader{
+    width: 50em;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogHeader div{
+    display: flex;
+}
+

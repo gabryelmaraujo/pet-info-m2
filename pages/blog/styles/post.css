@@ -1,0 +1,71 @@
+.postHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.avatarDivPost{
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+
+.postedBy{
+    margin-right: 12px;
+
+    font-size: var(--font-s-5);
+    font-weight: var(--font-w-2);
+    color: var(--grey-1);
+}
+
+.postedIn {
+    color: var(--grey-3);
+    font-size: var(--font-s-5);
+    font-weight: var(--font-w-2);
+}
+
+.divisor{
+    margin-right: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 20px;
+}
+
+.postInfos{
+    display: flex;
+    align-items: center;
+}
+
+.editPost{
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: var(--grey-1);
+}
+
+.deletePost{
+    color: var(--grey-4);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.postTitle{
+    margin-bottom: 20px;
+    
+    font-size: var(--font-s-1-5);
+    font-weight: var(--font-w-1);
+    line-height: var(--line-h-1-5);
+}
+
+.postDesc{
+    margin-bottom: 20px;
+
+    font-size: var(--font-s-4);
+    font-weight: var(--font-w-3);
+    line-height: var(--line-h-2);
+
+}
+
+.showPostBttn{
+    border: 0;
+    color: var(--brand-1);
+    cursor: pointer;
+}

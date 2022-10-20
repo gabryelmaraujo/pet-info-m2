@@ -21,6 +21,7 @@
   --sucess-1: hsl(162, 88%, 26%);
 
   --font-s-1: 32px;
+  --font-s-1-5: 24px;
   --font-s-2: 20px;
   --font-s-3: 18px;
   --font-s-4: 16px;
@@ -31,10 +32,29 @@
   --font-w-3: 400;
 
   --line-h-1: 48px;
+  --line-h-1-5: 36px;
   --line-h-2: 24px;
   --line-h-3: 21px;
 }
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--brand-1);    
+  border-radius: 20px;       
 }

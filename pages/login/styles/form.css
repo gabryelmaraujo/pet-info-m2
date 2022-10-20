@@ -84,6 +84,10 @@ form button {
 
     cursor: pointer;
 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
 }
 
 

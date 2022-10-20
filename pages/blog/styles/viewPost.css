@@ -1,0 +1,57 @@
+
+.viewPostContainer{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 0;
+}
+
+.postViewer{
+    position: absolute;
+    top: 50px;
+
+    background-color: var(--grey-9);
+
+    border-radius: 8px;
+
+    width: 800px;
+    max-height: 570px;
+    padding: 32px 24px;
+
+    overflow-y: auto;
+}
+
+.viewPostHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.closeModal{
+    border: 0;
+    font-size: var(--font-s-5);
+    color: var(--grey-4);
+}
+
+.viewPostTitle{
+    margin-bottom: 20px;
+
+    color: var(--grey-1);
+    font-size: var(--font-s-1-5);
+    font-weight: var(--font-w-1);
+    line-height: var(--line-h-1-5);
+}
+
+.postDescription{
+    font-size: var(--font-s-4);
+    font-weight: var(--font-w-3);
+    color: var(--grey-3);
+    line-height: var(--line-h-1-5);
+}
