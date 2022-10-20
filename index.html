@@ -36,7 +36,7 @@
             </div>
             <form>
                 <label for="lpLoginInput">Usuário</label>
-                <input type="email" name="lpLoginInput" id="lpLoginInput" placeholder="Digite seu email aqui...">
+                <input type="email" name="lpLoginInput" id="lpLoginInput" placeholder="Digite seu email aqui..." >
 
                 <label for="lpPassInput">Senha</label>
                 <input type="password" name="lpPassInput" id="lpPassInput" placeholder="Digite sua senha aqui...">
@@ -45,7 +45,8 @@
                 <p class="passwordError hide"> A senha está incorreta!</p>
                 </div>
 
-                <button class="lpLoginBttn">
+                <!--Se n achar usuário add classes  "qtip tip-bottom" -->
+                <button class="lpLoginBttn" id="lpLoginBttn" data-tip="Usuário não encontrado">
                     <span class="spanAcessLoginBttn">Acessar</span>
                     <img src="/images/spinner.svg" alt="" class="loadingSpinner hide">
 
@@ -60,6 +61,6 @@
 
 
     </main>
-    <script type="module" src="index.js"></script>
+    <script type="module" src="/pages/login/index.js"></script>
 </body>
 </html>

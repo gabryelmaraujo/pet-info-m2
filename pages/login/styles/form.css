@@ -52,6 +52,10 @@ form button {
     cursor: pointer;
 }
 
+.lpLoginBttn:disabled{
+    background-color: hsla(230, 57%, 50%, 0.589);
+}
+
 .lpFormFooter{
     display: flex;
     align-items: center;
