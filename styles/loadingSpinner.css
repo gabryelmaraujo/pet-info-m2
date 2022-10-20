@@ -10,3 +10,11 @@
         transform: rotate(1turn);
     }
   }
+
+@keyframes disappear {
+  0%{
+    visibility: 1;
+  }100%{
+    visibility: 0;
+  }
+}

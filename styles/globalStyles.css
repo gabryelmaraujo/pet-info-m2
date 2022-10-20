@@ -79,7 +79,7 @@ button {
   width: 180px;
   opacity: 1;
   visibility: visible;
-
+  animation: disappear 1s ;
   
   font-size: 14px;
   font-weight: 600;
@@ -111,3 +111,4 @@ button {
   left: 50%;
   transform: translate(-50%, 0);
 }
+
