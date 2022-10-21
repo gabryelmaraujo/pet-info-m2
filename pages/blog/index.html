@@ -16,11 +16,13 @@
 <link rel="stylesheet" href="/pages/blog/styles/viewPost.css">
 <link rel="stylesheet" href="/pages/blog/styles/editPost.css">
 <link rel="stylesheet" href="/pages/blog/styles/createPost.css">
+<link rel="stylesheet" href="/pages/blog/styles/deletePost.css">
+
 
     <title>Petinfo</title>
 </head>
 <body>
-    <main class="blogContainer">
+    <main class="blogContainer" id="blogContainer">
         <header class="blogHeader">
             <h1>Petinfo</h1>
             <div>
@@ -30,7 +32,7 @@
                 </div>
             </div>
         </header>
-        <main class="blogaPosts">
+        <main class="blogPosts">
             <ul class="ulPosts">
                 <!-- <li class="post" id="idpost">
                     <header class="postHeader">
@@ -48,8 +50,8 @@
                         </div>
 
                         <div class="postBttnsDiv">
-                            <button class="editPost">Editar</button>
-                            <button class="deletePost">Excluir</button>
+                            <button class="editPost" id="editPost">Editar</button>
+                            <button class="deletePost" id="deletePost">Excluir</button>
                         </div>
                     </header>
                     <main class="postMain">
@@ -66,7 +68,7 @@
                 </li> -->
             </ul>
         </main>
-
+        <section id="modalSection">
         <!-- <section class="viewPostContainer">
             <section class="postViewer">
                 <header class="viewPostHeader">
@@ -141,6 +143,26 @@
                 </form>
             </section>
         </section> -->
+
+        <!-- <section class="confirmDeleteContainer">
+            <section class="confirmDelete">
+                <header class="confirmHeader">
+                    <h1>Confirmação de exclusão</h1>
+                    <button class="closeModal">X</button>
+                </header>
+                <main class="confirmMain">
+                    <h2>Tem certeza que deseja excluir este post?</h2>
+                    <p>Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+                </main>
+                <div class="confirmButtons">
+                    <button class="cancelDelete">Cancelar</button>
+                    <button class="confirmBttn">Sim, excluir este post</button>
+                </div>
+
+            </section>
+
+        </section> -->
+    </section>
     </main>
 
     <script type="module" src="/pages/blog/index.js"></script>

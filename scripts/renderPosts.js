@@ -1,6 +1,11 @@
+import { receiveUserData } from "../../scripts/receiveUserData.js";
+import { editFunction } from "../../scripts/editPost.js"
+
 
 
 async function renderPosts(){
+    const userData = await receiveUserData()
+    console.log(userData.userId)
 
     const postsUrl = "http://localhost:3333/posts"
 
@@ -52,8 +57,8 @@ async function renderPosts(){
                         </div>
 
                         <div class="postBttnsDiv">
-                            <button class="editPost">Editar</button>
-                            <button class="deletePost">Excluir</button>
+                            <button class="editPost hide" id="editPost">Editar</button>
+                            <button class="deletePost hide" id="deletePost">Excluir</button>
                         </div>
                     </header>
                     <main class="postMain">
@@ -71,8 +76,19 @@ async function renderPosts(){
 
         `)
 
+        
+        if(userData.userId == creatorId){
+            const editBttn = document.getElementById("editPost")
+            editBttn.classList.remove('hide')
+            editFunction(postTitle, postContent)
+            const deleteBttn = document.getElementById("deletePost")
+            deleteBttn.classList.remove('hide')
+        }
+
+         
     });
 
+    
 
 
 }
