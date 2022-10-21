@@ -69,6 +69,13 @@ input{
 
     cursor: pointer;
 }
+.registerBttn:disabled{
+    background-color: hsla(230, 57%, 50%, 0.589);
+}
+
+.hide {
+    display: none;
+}
 
 .backToLpBttn{
     display: block;

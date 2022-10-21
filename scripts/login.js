@@ -33,7 +33,7 @@ async function loginFunction(){
     
             const response = await logar.json()
     
-            console.log(response)
+
              if(response.message == 'O email está incorreto'){
 
                 arrElementos[2].setAttribute("class", "qtip tip-bottom")

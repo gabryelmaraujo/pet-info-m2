@@ -15,12 +15,12 @@ async function renderPosts(){
 
     const response = await getPosts.json()
 
-    //CRIANDO POSTS
+
 
     const ulPosts = document.querySelector(".ulPosts")
 
     response.forEach((e) => {
-        console.log(e)
+
         const postId = e.id;
         const postTitle = e.title;
         const postContent = e.content;
@@ -30,11 +30,8 @@ async function renderPosts(){
             const creatorName = postCreator.username
             const creatorId = postCreator.id
 
-            // const pos = new Date(e.createdAt);
             const dataMonth = monthConverter(postData);
             const dataYear = postData.getFullYear();
-
-            console.log(dataMonth, dataYear);
 
 
         ulPosts.insertAdjacentHTML("beforeend", `
@@ -79,7 +76,7 @@ async function renderPosts(){
 
 
 }
-renderPosts()
+
 
 function monthConverter(data){
 
@@ -111,3 +108,5 @@ function monthConverter(data){
         return 'Dezembro'
     }
 }
+
+export { renderPosts }

@@ -1,4 +1,7 @@
 
 import { receiveUserData } from "../../scripts/receiveUserData.js";
 
-console.log(await receiveUserData())
+import { renderPosts } from "../../scripts/renderPosts.js"
+
+await receiveUserData()
+await renderPosts()

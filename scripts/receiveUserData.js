@@ -22,6 +22,8 @@ async function receiveUserData(){
     const userEmail = response.email
     const userAvatar = response.avatar
 
+    const loggedAvatar = document.getElementById("profileAvatar")
+        loggedAvatar.src=userAvatar
 
     const userData = {userId, userName, userEmail, userAvatar}
 

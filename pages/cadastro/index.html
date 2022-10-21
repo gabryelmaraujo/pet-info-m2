@@ -19,17 +19,23 @@
                 <h3>Cadastro</h3>
                 <a href="/index.html">Voltar para o login</a>
             </div>
-            <form action="" class="rpForm">
+            <form action="" class="rpForm" id="rpForm">
                 <label for="rpUsername">Usuário</label>
-                <input type="text" name="rpUsername" id="rpUsername" placeholder="Digite seu nome aqui">
+                <input type="text" name="rpUsername" id="rpUsername" placeholder="Digite seu nome aqui" required>
 
                 <label for="rpEmail">Email</label>
-                <input type="email" name="rpEmail" id="rpEmail" placeholder="Digite seu email aqui">
+                <input type="email" name="rpEmail" id="rpEmail" placeholder="Digite seu email aqui" required>
+
+                <label for="userAvatarUrl">Link da foto de perfil</label>
+                <input type="url" name="userAvatarUrl" id="userAvatarUrl" placeholder="Insira o link aqui" required>
 
                 <label for="rpPassword">Senha</label>
-                <input type="password" name="rpPassword" id="rpPassword" placeholder="Digite sua senha aqui">
+                <input type="password" name="rpPassword" id="rpPassword" placeholder="Digite sua senha aqui" required>
 
-                <button class="registerBttn">Cadastrar</button>
+                <button class="registerBttn" id="registerBttn">
+                    <span class="registerBttnText"> Cadastrar</span>
+                    <img src="/images/spinner.svg" alt="" class="loadingSpinner hide">
+                </button>
                 <a href="/index.html" class="backToLpBttn">Voltar para o login</a>
 
             </form>
@@ -40,8 +46,10 @@
             <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
             <img src="/pages/cadastro/src/img/registerpageimg.png" alt="">
         </section>
-
     </main>
+
+    <script type="module" src="/pages/cadastro/index.js"></script>
+    <script src="/scripts/register.js"></script>
     
 </body>
 </html>
