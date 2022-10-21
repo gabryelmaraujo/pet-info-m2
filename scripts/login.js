@@ -1,8 +1,10 @@
 
 
-const baseUrl = "http://localhost:3333/"
+
 
 async function loginFunction(){
+
+    const baseUrl = "http://localhost:3333/"
 
     const form = document.querySelector('form')
     const elementos = form.elements
@@ -56,6 +58,7 @@ async function loginFunction(){
 
                 const acessText = document.querySelector('.spanAcessLoginBttn')
                 acessText.classList.add('hide')
+
                 const spinner = document.querySelector('.loadingSpinner')
                 spinner.classList.remove('hide')
 
@@ -73,4 +76,6 @@ async function loginFunction(){
     })
     
 }
-loginFunction()
+
+export {loginFunction}
+
