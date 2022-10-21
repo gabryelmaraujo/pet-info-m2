@@ -4,7 +4,7 @@
 async function receiveUserData(){
     const profileUrl = "http://localhost:3333/users/profile"
 
-    const loggedUser = JSON.parse(localStorage.getItem("@Petinfo/userAccess"))
+    const loggedUser = await JSON.parse(localStorage.getItem("@Petinfo/userAccess"))
 
     const userInfos = await fetch(profileUrl, {
         method: "GET",
@@ -16,14 +16,15 @@ async function receiveUserData(){
 
     const response = await userInfos.json()
 
+
     const userId = response.id
     const userName = response.username 
     const userEmail = response.email
     const userAvatar = response.avatar
 
-    console.log(userId, userName, userEmail, userAvatar)
 
     const userData = {userId, userName, userEmail, userAvatar}
+
 
     return userData
 
