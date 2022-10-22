@@ -10,7 +10,6 @@ const editFunction = async (title, content) => {
         const divButtons = e.target.parentElement
         const header = divButtons.parentElement
         const post = header.parentElement
-        console.log(post.id)
 
     modalSection.insertAdjacentHTML("beforeend", `
     
