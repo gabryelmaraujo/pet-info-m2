@@ -11,6 +11,9 @@ import { deslogarFunction } from "../../scripts/logout.js"
 
 import { acessarPost } from "../../scripts/acessarPost.js"
 
+import { verifyLogin } from "../../scripts/verifyLogin.js"
+
+verifyLogin()
 await receiveUserData()
 await renderPosts()
 await createPost()
