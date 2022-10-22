@@ -71,7 +71,7 @@ async function renderPosts(){
                             </p>
                         </div>
                         <div class="showPostDiv">
-                            <button class="showPostBttn">Acessar publicação</button>
+                            <button class="showPostBttn" id="showPostBttn">Acessar publicação</button>
                         </div>
                     </main>
                 </li>

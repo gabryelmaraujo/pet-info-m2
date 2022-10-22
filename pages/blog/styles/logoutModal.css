@@ -1,0 +1,46 @@
+
+
+.logoutModal{
+    background-color: var(--grey-9);
+
+    border: 1px solid black;
+    border-radius: 4px;
+
+    padding: 22px 17px;
+    width: 215px;
+    height: 117px;
+
+    position: absolute;
+    top: 7.8vh;
+    right: 20vw;
+}
+
+.userName{
+    font-size: var(--font-s-4);
+    font-weight: var(--font-w-2);
+    height: 50%;
+}
+
+.logoutBttn{
+    width: 100%;
+    border: 0;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+.logoutBttn:hover{
+    opacity: 1;
+}
+
+.buttonContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.buttonContent img{
+    width: 14px;
+    height: 21px;
+    margin-right: 20px;
+}
