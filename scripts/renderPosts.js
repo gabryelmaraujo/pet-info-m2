@@ -5,7 +5,7 @@ import { editFunction } from "../../scripts/editPost.js"
 
 async function renderPosts(){
     const userData = await receiveUserData()
-    console.log(userData.userId)
+
 
     const postsUrl = "http://localhost:3333/posts"
 
@@ -41,7 +41,7 @@ async function renderPosts(){
 
         ulPosts.insertAdjacentHTML("beforeend", `
 
-        <li class="post" id="idpost">
+        <li class="post" id="${postId}">
                     <header class="postHeader">
                         <div class="postInfos">
                             <div class="avatarDivPost">
@@ -65,9 +65,11 @@ async function renderPosts(){
                         <h1 class="postTitle">
                             ${postTitle}
                         </h1>
-                        <p class="postDesc">
-                            ${postContent}
-                        </p>
+                        <div class="postDescDiv">
+                            <p class="postDesc">
+                                ${postContent}
+                            </p>
+                        </div>
                         <div class="showPostDiv">
                             <button class="showPostBttn">Acessar publicação</button>
                         </div>

@@ -1,0 +1,54 @@
+.modalSection {
+    background-color: var(--grey-9);
+    width: 27.625em;
+    height: 125px;
+    border-radius: 4px;
+    padding: 21px 32px;
+    position: absolute;
+    right: 0vw;
+    top: 80vh;
+}
+
+.popUpContainer {
+    background-color: var(--grey-9);
+    width: 27.625em;
+    height: 125px;
+    border-radius: 4px;
+    padding: 21px 32px;
+    position: absolute;
+    right: 0vw;
+    top: 80vh;
+}
+
+.modalHeader{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.imgModalDiv {
+    background-color: var(--sucess-1);
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.modalHeader h1 {
+    color: var(--sucess-1);
+    font-size: var(--font-s-4);
+}
+
+.modalMain {}
+.modalMain p {
+    color: var(--grey-2);
+    line-height: var(--line-h-3);
+    font-size: var(--font-s-5);
+}
+.modalMain p a {
+    color: var(--brand-1);
+    text-decoration-line: underline;
+}

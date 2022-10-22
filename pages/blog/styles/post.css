@@ -63,8 +63,13 @@
     line-height: var(--line-h-1-5);
 }
 
-.postDesc{
+.postDescDiv{
     margin-bottom: 20px;
+    height: 48px;
+    overflow-y: hidden;
+}
+
+.postDesc{
 
     font-size: var(--font-s-4);
     font-weight: var(--font-w-3);

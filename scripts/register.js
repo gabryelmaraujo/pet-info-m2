@@ -41,10 +41,13 @@ registerForm.addEventListener('submit', async (e)=>{
                 const spinner = document.querySelector('.loadingSpinner')
                 spinner.classList.remove('hide')
 
+                const modalSection = document.querySelector(".modalSection")
+                modalSection.classList.remove('hide')
+
                 setTimeout(() => {
 
                     window.location.href="/index.html"
-                  }, "1500")
+                  }, "2000")
             }
             
 

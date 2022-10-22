@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="/pages/blog/styles/editPost.css">
 <link rel="stylesheet" href="/pages/blog/styles/createPost.css">
 <link rel="stylesheet" href="/pages/blog/styles/deletePost.css">
+<link rel="stylesheet" href="/styles/popUpModal.css">
 
 
     <title>Petinfo</title>
@@ -58,9 +59,11 @@
                         <h1 class="postTitle">
                             Outubro Rosa: Detalhes sobre a importância da prevenção do câncer de mama em cadelas e gatas
                         </h1>
-                        <p class="postDesc">
-                            Assim como em humanos, cadelas e gatas também podem desenvolver câncer de mama. Ainda hoje, para ambas as espécies, o câncer de mama tem maior...
-                        </p>
+                        <div class="postDescDiv">
+                            <p class="postDesc">
+                                Assim como em humanos, cadelas e gatas também podem desenvolver câncer de mama. Ainda hoje, para ambas as espécies, o câncer de mama tem maior...
+                            </p>
+                        </div>
                         <div class="showPostDiv">
                             <button class="showPostBttn">Acessar publicação</button>
                         </div>
@@ -116,7 +119,10 @@
 
                         <div class="formButtons">
                             <button class="cancelEdit">Cancelar</button>
-                            <button class="confirmEdit">Salvar alterações</button>
+                            <button class="confirmEdit">
+                                <p class="confirmText">Salvar alterações</p>
+                                <img src="/images/spinner.svg" alt="" class="loadingSpinner hide">
+                            </button>
                         </div>
                     </form>
                 </main>
@@ -162,6 +168,19 @@
             </section>
 
         </section> -->
+        <section class="popUpContainer hide">
+            <section class="modalDeletePost">
+                <header class="modalHeader">
+                    <div class="imgModalDiv">
+                        <img src="/images/check.svg" alt="">
+                    </div>
+                    <h1>Post deletado com sucesso!</h1>
+                </header>
+                <main class="modalMain">
+                    <p>O post selecionado para exlusão foi deletado, a partir de agora não aparecerá no seu feed!</p>
+                </main>
+            </section>
+        </section>
     </section>
     </main>
 
