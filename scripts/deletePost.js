@@ -67,7 +67,6 @@ async function deletePost(){
             })
             
             const response = await deletingPost.json()
-            console.log(response)
 
             if(response.message == "Post deletado com sucesso"){
 
