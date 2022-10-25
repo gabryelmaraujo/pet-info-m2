@@ -1,7 +1,10 @@
 
 const acessarPost = async () =>{
     
-    const showPostBttn = document.getElementById("showPostBttn")
+    const ulPosts = document.getElementById("ulPosts")
+    if(ulPosts.childElementCount > 0){
+
+        const showPostBttn = document.getElementById("showPostBttn")
 
     showPostBttn.addEventListener('click', async (e)=>{
         e.preventDefault()
@@ -56,6 +59,10 @@ const acessarPost = async () =>{
     })
 
 
+
+    }
+
+    
 }
 
 export { acessarPost }

@@ -1,8 +1,11 @@
 
 async function deletePost(){
     
-    const deletePost = document.getElementById("deletePost")
-    
+    const ulPosts = document.getElementById("ulPosts")
+
+    if(ulPosts.childElementCount > 0){
+
+        const deletePost = document.getElementById("deletePost")
     deletePost.addEventListener("click", (e)=>{
         const divButtons = e.target.parentElement
         const header = divButtons.parentElement
@@ -95,6 +98,9 @@ async function deletePost(){
 
     })
 
+
+    }
+    
 
 
 }
