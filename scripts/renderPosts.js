@@ -39,7 +39,7 @@ async function renderPosts(){
                 const dataYear = postData.getFullYear();
     
     
-            ulPosts.insertAdjacentHTML("beforeend", `
+            ulPosts.insertAdjacentHTML("afterbegin", `
     
             <li class="post" id="${postId}">
                         <header class="postHeader">
